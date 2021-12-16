@@ -3,6 +3,8 @@ package BUOI34.baitap.minitest;
 public class Student extends Person {
     private double averagePoint;
 
+    public Student(){}
+
     public Student(String name, int age){}
 
     public Student(double averagePoint) {

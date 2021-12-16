@@ -32,9 +32,36 @@ public class MyList<E> {
     public void remove(int index){
         if(index >= size || index < 0){
             throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index );
+        }else {
+            for (int i = index; i < size; i++) {
+                elements[i]  = elements[i + 1];
+            }
+            size -= 1;
         }
 
     }
+    public int size(){
+        return size;
+    }
+    public void clear(){
+        size = 0;
+        elements = new Object[DEFAULT_CAPACITY];
+    }
+    public int indexOf(E e){
+        for (int i = 0; i < size; i++) {
+            if(elements[i].equals(e)){
+                return i;
+            }
+        }
+        return -1;
+    }
 
+    public boolean contain(E e){
+        for (int i = 0; i < size; i++) {
+            if(e.equals(elements[i])){
+                return true;
+        }
+        }return false;
+    }
 }
 
