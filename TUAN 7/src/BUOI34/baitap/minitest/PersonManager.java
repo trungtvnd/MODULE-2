@@ -39,7 +39,7 @@ public class PersonManager implements Manager{
 
     @Override
     public void searchStudent() {
-        InputStream src;
+
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
 
