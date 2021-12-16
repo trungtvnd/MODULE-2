@@ -1,23 +1,34 @@
-package BUOI32.baitap.baitapvenha;
+package BUOI32.baitap.finalBTVN;
 import java.util.Comparator;
-public class Student implements Comparable<Student>{
 
-    private static int id = 0;
-
+public class Student{
+    private static int VALUE = 1;
+    private int id;
     private String name;
     private int age;
     private String gender;
     private String address;
     private double averagePoint;
 
-    public Student(String name, int age, String gender, String address, double averagePoint) {
+    public Student() {
+    }
 
+    public Student(String name, int age, String gender, String address, double averagePoint) {
+        this.id = VALUE;
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.address = address;
         this.averagePoint = averagePoint;
-        Student.id ++;
+        VALUE++;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -63,7 +74,8 @@ public class Student implements Comparable<Student>{
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", address='" + address + '\'' +
@@ -71,14 +83,4 @@ public class Student implements Comparable<Student>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Student o) {
-        if(getAveragePoint() > o.getAveragePoint()){
-            return 1;
-        }else if(getAveragePoint() < o.getAveragePoint()){
-            return -1;
-        }else {
-            return 0;
-        }
-    }
 }

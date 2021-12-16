@@ -28,6 +28,7 @@ public class StudentMain {
             System.out.println("4. Delete Student by name");
             System.out.println("5. Find Student by name");
             System.out.println("6. Display Student by Gender");
+            System.out.println("7. Sort array list Student");
             System.out.println("0. Exit");
             System.out.println("Would you like to do something ");
             int choice = scanner.nextInt();
@@ -63,6 +64,8 @@ public class StudentMain {
                         System.out.println(student);
                     }
                     break;
+                case 0:
+                    System.exit(0);
             }
         }
     }

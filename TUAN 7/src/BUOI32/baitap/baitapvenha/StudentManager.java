@@ -161,7 +161,6 @@ public class StudentManager {
             if(male.equals(student.getGender())){
                 System.out.println(student);
             }
-
         }
     }
     public static void showStudentFemale(Student[] students){
@@ -170,7 +169,6 @@ public class StudentManager {
             if(female.equals(student.getGender())){
                 System.out.println(student);
             }
-
         }
     }
 
