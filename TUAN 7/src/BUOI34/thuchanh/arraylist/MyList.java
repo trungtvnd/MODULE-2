@@ -1,8 +1,8 @@
-package BUOI34.thuchanh;
+package BUOI34.thuchanh.arraylist;
 
 import java.util.Arrays;
 
-class MyList<E> {
+public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
     private Object elements[];

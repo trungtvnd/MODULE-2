@@ -1,8 +1,6 @@
 package BUOI34.thuchanh;
 
-import org.junit.jupiter.api.BeforeEach;
-
-import static org.junit.jupiter.api.Assertions.*;
+import BUOI34.thuchanh.arraylist.MyList;
 
 class MyListTest {
 
@@ -20,5 +18,7 @@ class MyListTest {
 
         listInteger.get(0);
         System.out.println("element 6: "+listInteger.get(0));
+        listInteger.get(-1);
+        System.out.println("element -1: " + listInteger.get(-1));
     }
 }
