@@ -22,19 +22,21 @@ public class PersonManager implements Manager{
 
     @Override
     public void addStudent() {
-        for (int i = 0; i < persons.size(); i++) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Nhập thông tin: ");
-            System.out.println("Nhập tên");
-            String name = scanner.nextLine();
-            scanner.nextLine();
-            System.out.println("Nhập tuổi");
-            int age = scanner.nextInt();
-            persons.set(i, new Student(name, age));
-            for (Person person:persons) {
-                System.out.println(person);
-            }
-        }
+        Person person = new Person();
+        persons.add(person);
+//        for (int i = 0; i < persons.size(); i++) {
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("Nhập thông tin: ");
+//            System.out.println("Nhập tên");
+//            String name = scanner.nextLine();
+//            scanner.nextLine();
+//            System.out.println("Nhập tuổi");
+//            int age = scanner.nextInt();
+//            persons.set(i, new Student(name, age));
+//            for (Person person:persons) {
+//                System.out.println(person);
+//            }
+//        }
     }
 
     @Override
@@ -48,7 +50,8 @@ public class PersonManager implements Manager{
 
     @Override
     public void deleteStudent() {
-
+        Person person = new Person();
+        persons.remove(person);
     }
 
     @Override
