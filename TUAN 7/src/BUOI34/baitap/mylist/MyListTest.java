@@ -1,4 +1,4 @@
-package BUOI34.baitap;
+package BUOI34.baitap.mylist;
 
 import java.util.Arrays;
 
