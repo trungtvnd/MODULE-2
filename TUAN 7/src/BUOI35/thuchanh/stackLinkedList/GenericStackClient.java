@@ -1,4 +1,4 @@
-package BUOI35.thuchanh.stack;
+package BUOI35.thuchanh.stackLinkedList;
 
 public class GenericStackClient {
     private static void stackOfStrings (){
