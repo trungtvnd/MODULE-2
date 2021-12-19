@@ -1,21 +1,21 @@
 package BUOI35.baitap.reverseElement;
 
-import com.sun.org.apache.bcel.internal.classfile.StackMap;
+
 
 import java.util.*;
 
 public class ReverseStack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        Stack <String> stackList = new Stack<>();
-//        System.out.println("Nhập vào một chuỗi");
-//        String s = sc.nextLine();
-//        for (int i = 0; i < s.length(); i++) {
-//            stackList.push(s.charAt(i)+"");
-//        }
-//        for (int i = 0; i < s.length(); i++) {
-//            System.out.print(stackList.pop());
-//        }
+        Stack <String> stackList = new Stack<>();
+        System.out.println("Nhập vào một chuỗi");
+        String s = sc.nextLine();
+        for (int i = 0; i < s.length(); i++) {
+            stackList.push(s.charAt(i)+"");
+        }
+        for (int i = 0; i < s.length(); i++) {
+            System.out.print(stackList.pop());
+        }
 
 
         Stack <Integer> integerStackList = new Stack<>();
@@ -25,8 +25,8 @@ public class ReverseStack {
             intList[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(intList));
-        for (int i = 0; i < intList.length; i++) {
-            integerStackList.push(intList[i]);
+        for (int j : intList) {
+            integerStackList.push(j);
         }
         for (int i = 0; i < intList.length; i++) {
             System.out.print(integerStackList.pop()+",");
