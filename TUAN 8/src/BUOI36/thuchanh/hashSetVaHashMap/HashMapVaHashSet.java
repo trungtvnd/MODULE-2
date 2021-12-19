@@ -13,9 +13,9 @@ public class HashMapVaHashSet {
 
         HashMap<Integer, Student> studentHashMap = new HashMap<>();
         studentHashMap.put(1, student1);
-        studentHashMap.put(2, student1);
-        studentHashMap.put(3, student1);
-        studentHashMap.put(4, student1);
+        studentHashMap.put(2, student2);
+        studentHashMap.put(3, student3);
+        studentHashMap.put(4, student4);
 
         for (Map.Entry<Integer, Student> studentEntry:studentHashMap.entrySet()) {
             System.out.println(studentEntry.toString());
