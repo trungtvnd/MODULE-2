@@ -35,6 +35,9 @@ public class Main {
                     managerAnimals.editAnimal(sc);
                     break;
                 case 4:
+                    managerAnimals.displayMotCon(sc);
+                    break;
+                case 5:
                     managerAnimals.display();
                     break;
             }

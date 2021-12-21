@@ -109,12 +109,36 @@ public class ManagerAnimals {
                     System.out.println("Nhập loại");
                     ((Mouse) animal).setType(sc.nextLine());
                 }
-            }else {
-                System.out.println("Không tìm thấy con vật cần");
             }
         }
     }
-    public void displayDog(){
+    public void displayMotCon(Scanner scanner){
+        System.out.println("Nhập tên");
+        String name = scanner.nextLine();
+        for (Animals animals:animalsSet) {
+            if(name.equals(animals.getName())){
+                System.out.println(animals);
+            }
+        }
+    }
+    public void displayWeight(Scanner sc){
+        System.out.println("Nhập khoảng cân nặng");
+        System.out.println("Nhập cân nặng bắt đầu ");
+        double startWeight = sc.nextDouble();
+        System.out.println("Nhập cân nặng bắt đầu ");
+        double endWeight = sc.nextDouble();
+        double temp;
+        if(startWeight > endWeight){
+            temp = startWeight;
+            startWeight = endWeight;
+            endWeight = temp;
+        }
+        for (Animals animals:animalsSet) {
+            if(animals.getWeight() >= startWeight && animals.getWeight() <= endWeight){
+                System.out.println(animals);
+            }
+
+        }
 
     }
 
