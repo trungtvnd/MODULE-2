@@ -8,7 +8,7 @@ public class Main {
         try {
             inputSide();
         }catch (TriangleException te) {
-            te.printStackTrace();
+            System.err.println(te);;
         }catch(IOException e) {
             e.printStackTrace();
         }
