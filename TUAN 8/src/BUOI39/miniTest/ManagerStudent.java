@@ -80,7 +80,17 @@ public class ManagerStudent {
                 System.out.println(student);
             }
         }
-        }}
+        }
+        for (Person student : personHashSet) {
+            if(student instanceof Student){
+                if(((Student) student).avgPoint() == max){
+                    max = ((Student) student).avgPoint();
+                    System.out.println(student);
+                }
+            }
+        }
+
+    }
 
 
 //    public void sortByAvgPoint(){

@@ -20,6 +20,7 @@ public class Main {
                     "3. Edit Student\n" +
                     "4. Total sort average Point\n" +
                     "5. The highest Point Student\n" +
+                    "6. Display all\n" +
                     "0. Exit\n" +
                     "\n");
             System.out.println("Input your choice");
