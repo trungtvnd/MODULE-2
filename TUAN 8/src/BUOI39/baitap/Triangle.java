@@ -3,18 +3,41 @@ package BUOI39.baitap;
 import java.util.Scanner;
 
 public class Triangle {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    private int a;
+    private  int b;
+    private int c;
 
-            System.out.println("Nhập vào cạnh 1"); int side1 = sc.nextInt();
-            System.out.println("Nhập vào cạnh 2"); int side2 = sc.nextInt();
-            System.out.println("Nhập vào cạnh 3"); int side3 = sc.nextInt();
-            if(side1 > 0 && side2 >0 && side3>0){
-                if(side1 + side2 > side3 || side1 + side3 > side2 || side3+ side2 > side1){
-                    System.out.println("Đây là ba cạnh của tam giác");
-                }
-
-        }
+    public Triangle(int a, int b, int c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public int getC() {
+        return c;
+    }
+
+    public void setC(int c) {
+        this.c = c;
+    }
+
+    public Triangle() {
+
+    }
 }
