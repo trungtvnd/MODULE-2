@@ -61,7 +61,7 @@ public class Student extends Person implements Comparator<Student> {
         return "Student{" + super.toString() +
                 "mathPoint=" + mathPoint +
                 ", physicalPoint=" + physicalPoint +
-                ", chemicalPoint=" + chemicalPoint +
+                ", chemicalPoint=" + chemicalPoint + "avg point" + avgPoint() +
                 '}';
     }
 

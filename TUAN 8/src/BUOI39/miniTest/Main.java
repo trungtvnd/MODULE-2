@@ -45,6 +45,9 @@ public class Main {
                 case 6:
                     managerStudent.displayStudent();
                     break;
+                case 7:
+                    managerStudent.searchStudent(sc);
+                    break;
 
             }
 
