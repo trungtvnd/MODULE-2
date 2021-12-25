@@ -1,8 +1,6 @@
-package BUOI40.baitap;
+package BUOI40.baitap.copyText;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
