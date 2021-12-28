@@ -45,8 +45,6 @@ public class LibraryManager {
         LocalDate convertedDate = LocalDate.parse(todayDate, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         convertedDate = convertedDate.withDayOfMonth(
                 convertedDate.getMonth().length(convertedDate.isLeapYear()));
-
-
     }
     public void checkDate(String date){
 
