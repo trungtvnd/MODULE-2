@@ -1,4 +1,4 @@
-package BUOI42.baitap.product;
+package BUOI41.baitap.product;
 
 import java.io.File;
 import java.io.InputStream;
@@ -26,6 +26,7 @@ public class ProductMain {
             switch (choice){
                 case 1:
                     productManager.createProduct(sc);
+
                     break;
                 case 2:
                     productManager.editProduct(sc);

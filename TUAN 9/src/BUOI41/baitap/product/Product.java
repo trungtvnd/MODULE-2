@@ -1,4 +1,4 @@
-package BUOI42.baitap.product;
+package BUOI41.baitap.product;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package BUOI42.thuchanh.readAndWriteStudentList;
+package BUOI41.thuchanh.readAndWriteStudentList;
 
 import java.io.Serializable;
 

@@ -1,13 +1,7 @@
-package BUOI42.baitap.product;
-
-import BUOI42.demo.ObjectOutputStreamExample;
-import BUOI42.thuchanh.readAndWriteStudentList.Student;
+package BUOI41.baitap.product;
 
 import java.io.*;
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 import java.util.Scanner;
 
 public class ProductManager {
@@ -87,6 +81,7 @@ public class ProductManager {
         try{
             InputStream is = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(is);
+            Object obj = ois.readObject();
             products = (ArrayList<Product>) ois.readObject();
             ois.close();
         }catch (IOException ex){

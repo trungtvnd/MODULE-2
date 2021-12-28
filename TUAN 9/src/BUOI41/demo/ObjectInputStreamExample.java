@@ -1,9 +1,8 @@
-package BUOI42.demo;
+package BUOI41.demo;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
-import java.util.Properties;
 
 public class ObjectInputStreamExample {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package BUOI42.thuchanh.readAndWriteStudentList;
-
-import BUOI42.demo.ObjectOutputStreamExample;
+package BUOI41.thuchanh.readAndWriteStudentList;
 
 import java.io.*;
 import java.util.ArrayList;

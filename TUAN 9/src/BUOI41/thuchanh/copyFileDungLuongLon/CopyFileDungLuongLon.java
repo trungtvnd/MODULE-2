@@ -1,4 +1,4 @@
-package BUOI42.thuchanh.copyFileDungLuongLon;
+package BUOI41.thuchanh.copyFileDungLuongLon;
 
 import java.io.*;
 import java.nio.file.Files;
