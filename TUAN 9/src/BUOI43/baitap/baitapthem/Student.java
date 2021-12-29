@@ -13,11 +13,10 @@ public class Student extends Human {
         id = ++IDC;
         this.avgPoint = avgPoint;
     }
-    public Student(String name,double avgPoint, String xepLoai) {
+    public Student(String name,double avgPoint) {
         super(name);
         id = ++IDC;
         this.avgPoint = avgPoint;
-        this.xepLoai = xepLoai;
     }
 
     public String getXepLoai() {
@@ -70,7 +69,7 @@ public class Student extends Human {
                 '}';
     }
     public String displayInformation(){
-        return (String.format("%-5d%-25S%-15S%-15S%-15.2f\n", getId(), getName(),getGender(), getAge(),getAvgPoint()));
+        return (String.format("%-5d%-20S%-15S%-15S%-15.2f\n", getId(), getName(),getGender(), getAge(),getAvgPoint()));
     }
 
 }

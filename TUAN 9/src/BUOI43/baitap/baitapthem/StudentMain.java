@@ -9,18 +9,15 @@ public class StudentMain {
 
         int choice;
         do{
-            System.out.println("-------------------\n");
-            System.out.println("============MENU============");
-            System.out.println("" +
-                    "1. Add Student\n" +
-                    "2. Edit Student\n" +
-                    "3. Delete Student\n" +
-                    "4. Display all Student\n" +
-                    "5. Display all Student sort by avgPoint\n" +
-                    "6. Display the student by Xếp loại\n" +
-                    "7. Save information\n" +
-                    "8. Read information\n" +
-                    "");
+            System.out.println("❀❀❀❀❀❀❀❀❀❀ ●▬▬▬▬๑۩۩๑▬▬▬▬▬● ❀❀❀❀❀❀❀❀❀❀❀❀");
+            System.out.println("❀       1. Tạo sinh viên mới                          ❀");
+            System.out.println("❀       2. Hiển thị danh sách                         ❀");
+            System.out.println("❀       3. Sửa theo tên                               ❀");
+            System.out.println("❀       4. Xóa sinh viên                              ❀");
+            System.out.println("❀       5. Hiển thị ra điểm TB trên 7.5               ❀");
+            System.out.println("❀       6. Hiển thị ra Rank sinh viên                 ❀");
+            System.out.println("❀       0. Exit                                       ❀");
+            System.out.println("❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀❀❀❀❀❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀");
             System.out.println("In put your choice: ");
             choice = sc.nextInt();
             switch (choice){

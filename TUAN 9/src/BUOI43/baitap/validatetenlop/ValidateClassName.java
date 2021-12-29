@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class ValidateClassName {
     private static Pattern pattern;
     private Matcher matcher;
-    public static final String CLASS_NAME = "^(?=.+[C|A|P])(?=.+[0-9]{4})(?=.[G|H|I|K|L|M])$";
+    public static final String CLASS_NAME = "^[ACP][0-9]{4}[GHIKLM]$";
 
     public ValidateClassName() {
         pattern = Pattern.compile(CLASS_NAME);
