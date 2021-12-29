@@ -60,6 +60,7 @@ public class StudentManager {
 
                 System.out.println("Input new age: ");
                 studentEdit.setAge(sc.nextInt());
+                sc.nextLine();
 
                 System.out.println("Input new Gender: ");
                 studentEdit.setGender(sc.nextLine());
