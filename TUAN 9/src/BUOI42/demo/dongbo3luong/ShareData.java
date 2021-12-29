@@ -3,7 +3,7 @@ package BUOI42.demo.dongbo3luong;
 public class ShareData {
     int rad;
     int total;
-    int index = 1;
+    int index;
 
     public ShareData() {
         total = 0;
@@ -37,8 +37,7 @@ public class ShareData {
         total += value;
     }
     public synchronized boolean checkTotal(){
-        return total < 200;
+        return total<200;
     }
-
 
 }
