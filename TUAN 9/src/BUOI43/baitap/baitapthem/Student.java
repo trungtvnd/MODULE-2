@@ -69,7 +69,7 @@ public class Student extends Human {
                 '}';
     }
     public String displayInformation(){
-        return (String.format("%-5d%-20S%-15S%-15S%-15.2f\n", getId(), getName(),getGender(), getAge(),getAvgPoint()));
+        return (String.format("%-15d%-20S%-15S%-15d%-15.2f\n", getId(), super.getName(),getGender(), getAge(),getAvgPoint()));
     }
 
 }

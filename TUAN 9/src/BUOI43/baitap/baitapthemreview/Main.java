@@ -1,15 +1,17 @@
-package BUOI43.baitap.baitapthem;
+package BUOI43.baitap.baitapthemreview;
+
+import BUOI43.baitap.baitapthem.StudentManager;
 
 import java.util.Scanner;
 
-public class StudentMain {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StudentManager studentManager = new StudentManager();
+  ManagerStudent managerStudent = new ManagerStudent();
 
         int choice;
         do{
-            System.out.println();
+            System.out.println("Nhập thông tin");
             System.out.println("❀❀❀❀❀❀❀❀❀❀ ●▬▬▬▬๑۩۩๑▬▬▬▬▬● ❀❀❀❀❀❀❀❀❀❀❀❀");
             System.out.println("❀       1. Tạo sinh viên mới                          ❀");
             System.out.println("❀       2. Hiển thị danh sách                         ❀");
@@ -23,28 +25,28 @@ public class StudentMain {
             choice = sc.nextInt();
             switch (choice){
                 case 1:
-                    studentManager.creatStudent(sc);
+                    managerStudent.addStudent(sc);
                     break;
                 case 2:
-                    studentManager.editStudent(sc);
+                    managerStudent.editStudent(sc);
                     break;
                 case 3:
-                    studentManager.deleteStudent(sc);
+                    managerStudent.deleteStudent(sc);
                     break;
                 case 4:
-                    studentManager.displayStudent();
+                    managerStudent.displayAll();
                     break;
                 case 5:
-                    studentManager.displayByAvgPoint();
+                    managerStudent.displayByPoint();
                     break;
                 case 6:
-                    studentManager.displayBySort();
+                    managerStudent.displayFormatString();
                     break;
                 case 7:
-                    studentManager.saveInfor();
+                    managerStudent.saveFile();
                     break;
                 case 8:
-                    studentManager.readInfor();
+                   managerStudent.readFile();
                     break;
                 case 9:
 
@@ -53,4 +55,5 @@ public class StudentMain {
 
         }while (choice!=0);
     }
-}
+    }
+

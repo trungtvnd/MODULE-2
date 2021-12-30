@@ -101,7 +101,7 @@ public class StudentManager {
             for (Student student : studentArrayList) {
                 bf.write(student.displayInformation());
             }
-            bf.flush();
+//            bf.flush();
             bf.close();
         } catch (IOException e) {
             e.printStackTrace();
