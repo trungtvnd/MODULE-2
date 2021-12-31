@@ -1,4 +1,4 @@
-package thuchanh;
+package thuchanh.factory;
 
 public class Cat extends Animal{
 
