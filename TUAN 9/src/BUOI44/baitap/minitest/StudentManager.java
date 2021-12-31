@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class StudentManager {
     public static final String PATH_NAME = "C:\\TRUNGTV\\HOC TAP\\CODEGYM\\MODULE2\\FILE CODE\\MODULE 2\\TUAN 9\\src\\BUOI44\\baitap\\minitest\\saveFile.csv";
-    private ArrayList<Student> studentArrayList = new ArrayList<>();
+    private ArrayList<Student> studentArrayList;
 
     public StudentManager() {
         this.studentArrayList = readFile(PATH_NAME);
@@ -21,7 +21,6 @@ public class StudentManager {
     public void createStudent(Scanner sc){
         sc.nextLine();
         System.out.println("Input name: "); String name = sc.nextLine();
-        sc.nextLine();
         System.out.println("input age: "); int age = sc.nextInt();
         System.out.println("Input Math Point: "); double mathPoint = sc.nextDouble();
         System.out.println("Input Math Point: "); double physicalPoint = sc.nextDouble();
@@ -146,11 +145,20 @@ public class StudentManager {
             while ((line = br.readLine())!=null){
                 String[] strings = line.split(",");
                 students.add(new Student(strings[0], Integer.parseInt(strings[1]), Double.parseDouble(strings[2]), Double.parseDouble(strings[3]), Double.parseDouble(strings[4])));
+                Human.IDC = checkMax(students);
             }
         }catch (Exception e){
             System.err.println();
         }
         return students;
+    }
+    public int checkMax(ArrayList<Student> students){
+        int max = students.get(0).getId();
+        for (Student student:students) {
+            if(max < student.getId()){
+                max = student.getId();
+            }
+        }return max;
     }
 
 }

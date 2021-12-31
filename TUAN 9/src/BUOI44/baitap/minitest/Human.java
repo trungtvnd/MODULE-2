@@ -1,7 +1,7 @@
 package BUOI44.baitap.minitest;
 
 public class Human {
-    private static int IDC = 0;
+    public static int IDC = 0;
     private int id;
     private String name;
     private int age;
